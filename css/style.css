@@ -354,6 +354,9 @@ w-pant-p {
 
          /* contact */
 
+        .contact{
+            padding-top: 50px;
+        }
          .form {
             display: flex;
             justify-items: center;
