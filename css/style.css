@@ -13,7 +13,7 @@ body{
 
 /* Navigation */
 .navigation {
-    height: 90px;
+    height: 100px;
     /* background-color: rgb(90, 90, 244); */
     background-color: rgb(146, 235, 12);
     position: sticky;
@@ -22,7 +22,7 @@ body{
 
 /* Nav-1 */
 nav-1 {
-    height: 7vh;
+    height: 30px;
     display: flex;
     justify-content: space-between;
 }
@@ -58,7 +58,7 @@ nav-1 {
 
 /* Nav-2 */
 nav-2 {
-    height: 7vh;
+    height: 30px;
     display: flex;
     justify-content: space-between;
 }
