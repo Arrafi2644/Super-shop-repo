@@ -1,0 +1,457 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(190, 186, 186);
+}
+
+/* Navigation */
+.navigation {
+    height: 90px;
+    /* background-color: rgb(90, 90, 244); */
+    background-color: rgb(146, 235, 12);
+    position: sticky;
+    top: 0;
+}
+
+/* Nav-1 */
+nav-1 {
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 15px;
+    font-size: 21px;
+    padding: 0 5px;
+    /* color: rgb(89, 248, 36); */
+    color: rgb(90, 90, 244);
+    font-weight: bolder;
+    letter-spacing: 0.3rem;
+}
+
+.btn {
+    margin: 15px;
+    font-size: 17px;
+    padding: 3px 10px;
+    border: 2px solid navy;
+    border-radius: 12px;
+    background-color: rgb(147, 85, 4);
+    color: orange;
+    height: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.btn:hover {
+    background-color:  rgb(154, 252, 7);
+    color: orangered;
+}
+
+
+/* Nav-2 */
+nav-2 {
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav-l {
+    margin: 0 20px;
+    padding: 5px 10px;
+}
+
+nav-l ul {
+    display: flex;
+    /* align-items: center; */
+}
+
+nav-l ul li {
+    transition: all 1s ease-in-out;
+    padding: 5px;
+    list-style: none;
+    margin: 0 15px;
+   
+}
+
+nav-l ul li a {
+    text-decoration: none;
+    /* color: rgb(154, 252, 7); */
+    color:  rgb(90, 90, 244);
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: all 0.5s ease-in-out;
+    
+    padding: 8px 10px;
+}
+
+nav-l ul li a:hover {
+    color: darkblue;
+    text-decoration: underline;
+    
+}
+
+
+.dropdown-content{
+    background-color: rgb(250, 239, 239);
+    box-shadow: 0 8px 12px 0 rgb(216, 212, 212) ;
+    display: none;
+    position:absolute;    
+    top: 80px;
+  
+}
+
+.dropdown-content a {
+    display: block;
+    color: black;
+   display: flex;
+   justify-content: center;
+    width: 100px;
+
+}
+.dropdown-content a:hover{
+    background-color: rgb(237, 227, 227);
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+    transition-delay: 0s 0s 0.3s;
+}
+
+
+.search {
+    margin: auto 10px;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.search input {
+    padding: 4px;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+.s-btn {
+    padding: 4px;
+    border: 2px solid black;
+    background-color: gray;
+    color: white;
+    border-radius: 8px;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+}
+
+.s-btn:hover {
+    color: black;
+    background-color: rgb(154, 252, 7);
+}
+
+/* Slider */
+.slider {
+    width: 80%;
+    height: 60vh;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 4px auto;
+    padding: 20px 35px;
+    background: url(../img/super-shop\ bg.avif) center center/cover;
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 20px;
+    font-style: italic;
+
+}
+
+                    /* main */            
+
+.about {
+    margin: 15px 40px;
+    padding: 6px;
+    padding-top: 50px;
+}
+
+.about-p {
+    font-size: 18px;
+    padding: 4px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5rem;
+}
+
+h3 {
+    margin: 6px;
+    padding: 6px;
+    font-size: 25px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.services {
+    margin: 15px 40px;
+    padding: 6px;
+    padding-top: 50px;
+}
+
+.services-p {
+    font-size: 18px;
+    padding: 4px;
+    font-weight: bolder;
+    padding-left: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+services-l ul li {
+    font-size: 18px;
+    padding: 4px;
+    margin-left: 70px;
+    padding-left: 10px;
+    list-style-type: decimal-leading-zero;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#products{
+    padding-top: 50px;
+}
+
+/* t-shart */
+
+#t-shart h3{
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+t-shart-p {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.t-product {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px;
+    margin-bottom: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.t-nrd {
+    padding-left: 6px;
+    padding-bottom: 6px;
+}
+
+/* #t-rat{
+    display: inline;
+} */
+.rat-order {
+    display: flex;
+    justify-content: space-between;
+}
+
+#order-btn {
+    padding: 2px;
+    margin: auto;
+    transition: all 0.5s ease-in-out;
+    width: 77px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(6, 176, 6);
+    color: white;
+}
+
+#order-btn:hover {
+    width: 85px;
+    background-color: rgb(130, 96, 12);
+    color: white;
+    border-radius: 10px;
+}
+
+/* shart */
+
+#shart h3{
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+w-shart-p {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.s-product {
+   
+        border: 1px solid black;
+        border-radius: 5px;
+        margin: 5px;
+        margin-bottom: 10px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.s-nrd {
+    padding-left: 6px;
+    padding-bottom: 6px;
+}
+
+/* pant */
+#pant h3{
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+w-pant-p {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.p-nrd {
+    padding-left: 6px;
+    padding-bottom: 6px;
+}
+
+.p-product {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px;
+    margin-bottom: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+    /* shoes */
+
+    #shoes h3{
+        padding-top: 100px;
+        padding-bottom: 20px;
+        }
+
+    w-shoe-p {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .sh-product {
+        border: 1px solid black;
+        border-radius: 5px;
+        margin: 5px;
+        margin-bottom: 10px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+   
+    .sh-nrd {
+        padding-left: 6px;
+        padding-bottom: 6px;
+    }
+
+         /* contact */
+
+         .form {
+            display: flex;
+            justify-items: center;
+            flex-direction: column;
+            width: 700px;
+            margin: auto;
+        }
+
+        h3 {
+
+            margin: 6px;
+            padding: 6px;
+            font-size: 25px;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+        h4{
+            margin: 6px;
+            padding: 6px;
+            font-size: 18px;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+        }
+
+        .form input {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: 5px auto;
+            padding: 4px;
+            width: 400px;
+            border: 1px solid black;
+            border-radius: 4px;
+            font-size: 15px;
+        }
+
+        .cheakbox {
+            display: flex;
+            justify-content: center;
+            margin: 5px auto;
+            width: 400px;
+        }
+
+        #cheakbox {
+            width: 17px;
+            cursor: pointer;
+        }
+
+        .cheakbox h5 {
+            margin: 5px 0;
+            font-size: 17px;
+            font-weight: 500;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .form-btn {
+            display: flex;
+            justify-content: space-around;
+            margin: 5px auto;
+        }
+        
+        .form-btn button {
+            /* background-color: gray; */
+            background-color: rgb(6, 176, 6);
+            border: 1px solid black;
+            border-radius: 8px;
+            cursor: pointer;
+            color: white;
+            width: 75px;
+            padding: 3px;
+            transition: all 0.5s ease-in-out;
+            letter-spacing: 0.1rem;
+        }
+        .form-btn button:hover{
+            width: 85px;
+            background-color: rgb(130, 96, 12);
+            color: white;
+            border-radius: 10px;
+            letter-spacing: 0.2rem;
+        }
+
+        .contact h4 a{
+            transition: color 0.3s ease-in-out;
+        }
+
+        .contact h4 a:hover{
+            color:  rgb(6, 176, 6);
+        }
+
+        /* footer */
+
+   .footer{
+       height: 10vh;
+       background-color: rgb(111, 179, 8);
+       color: white;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+   }
+ 
